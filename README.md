@@ -5,9 +5,9 @@ This repository contains Programming Assignment 1 for the course "Advanced Compu
 ## 1. WORD ROTATION PROBLEM
 Create a function that accepts a non-empty string and moves the first character of the string to the end while keeping all remaining characters in their original order and the capitalization of every character.
 The following functions and methods were used:<br>
-- ` ("")[index of first element: index of last element: increment] ` - Slices the character/s at the starting index until the end of the string and the following based on the increment.<br>
-<br> Example: ("World")[0:1:1] -> 'w'<br>
-- ` len() ` - Gets the length of the string.
+- ` ("")[index of first element: index of last element: increment] ` - Slices the character/s at the starting index until the end of the string and the following based on the increment. <br>
+<br> Example: ("World")[0:1:1] -> 'w'<br><br>
+- ` len() ` - Gets the length of the string.<br>
 <br> Example: len("world") -> 5<br>
 <br>These built-in functions and methods were combined to create a single defined function that moves the first character of the string to the end while preserving all other characters and their capitalization.
 ```
@@ -19,10 +19,10 @@ print(rotate_word(input("enter a word")))
 ```
 ## 2. USERNAME BUILDER PROBLEM
 Create a function that accepts two strings, the first and last name. While converting all letters to lowercase, remove all spaces from the first and last names, then join the processed first and last names with a period (.).
-<br> The following functions and methods were used:<br>
+<br> The following functions and methods were used:<br><br>
 - ` "".lower() ` - Changes all uppercase characters to their lowercase versions.<br>
-  <br> Example: "My Name Is".lower() -> 'my name is'<br>
-- ` "".replace(a, b)` - Replaces every element/character in a using b.
+  <br> Example: "My Name Is".lower() -> 'my name is'<br><br>
+- ` "".replace(a, b)` - Replaces every element/character in a using b.<br>
   <br> Example: "my name is".replace(" ","") -> 'mynameis'<br>
 <br>These built-in functions and methods were combined to create a function that accepts two strings, first and last name. While converting all letters to lowercase, remove all spaces from the first and last names, then join the processed first and last names with a period (.).
 ```
