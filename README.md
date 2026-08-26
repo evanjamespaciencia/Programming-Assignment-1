@@ -32,3 +32,49 @@ def make_username(first_name,last_name):
 print(make_username(input("Enter first name"), input("Enter last name")))
 ```
 ## 3. BOOKEND SWAP PROBLEM
+Create a function that accepts a list containing at least two elements. Unpack the list into 3 elements:<br>
+- first – the first element.
+• middle – a list containing everything between the first and last elements.
+• last – the last element
+<br> Swap the first and last elements of the list while keeping the middle elements in order and leaving the original list unchanged. <br>
+The following functions and methods were used:<br><br>
+- `"".remove(a)` - Removes an element from a list.<br>
+Example: <br>
+m=["1","2","3","4"]<br>
+m.remove(0) -> ["2","3","4"]<br>
+- `"".append()` - Places an element at the end of the list<br>
+Example: <br>
+m=["banana","apple","grape"]
+m.append("orange") -> ["banana","apple","grape","orange"] <br>
+- `"".insert(a,b)` - Inserts element b at index a<br>
+Example:
+m=["blue","green","yellow"]
+m.insert(0,"red"] -> ["red", "blue","green", "yellow"]<br>
+<br>These built-in functions and methods were combined to create a function that accepts a list containing at least two elements. Unpack the list into 3 elements:<br>
+- first – the first element.
+  
+- middle – a list containing everything between the first and last elements.
+  
+- last – the last element
+  
+<br> Swap the first and last elements of the list while keeping the middle elements in order and leaving the original list unchanged. <br>
+The following functions and methods were used:<br>
+```
+def swap_bookends(items):
+    first, *middle, last = items
+    items.remove(first)
+    items.remove(last)
+    items.insert(0,last)
+    items.append(first)
+    return(items)
+m = []
+m.append(input("enter item"))
+m.append(input("enter item"))
+x=input("press enter to continue, and enter s to stop")
+if x!="s":
+    while x!="s":
+        m.append(input("enter item"))
+        print("Current items", m)
+        x=input("press enter to continue, and enter s to stop")
+print("bookend", swap_bookends(m))
+```
