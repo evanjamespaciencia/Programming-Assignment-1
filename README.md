@@ -2,11 +2,37 @@
 ### **Made by: Evan James G. Paciencia|2ECE-C**
 This repository contains Programming Assignment 1 for the course "Advanced Computer Programming" of S.Y. 2026-2027. This assignment covers three Python problems about Module 1 - Base Computing with Python.
 
-## WORD ROTATION PROBLEM
+## 1. WORD ROTATION PROBLEM
 Create a function that accepts a non-empty string and moves the first character of the string to the end while keeping all remaining characters in their original order and the capitalization of every character.
 The following functions and methods were used:
 - ` ("")[index of first element: index of last element: increment] ` - Slices the character/s at the starting index until the end of the string and the following based on the increment.
-    Example: ("World")[0:1:1] -> 'w'
+<br> Example: ("World")[0:1:1] -> 'w'
 - ` len() ` - Gets the length of the string.
-    Example: len("world") -> 5
-This built-in function and method were combined to create a single defined function that moves the first character of the string to the end while preserving all other characters and their capitalization.
+<br> Example: len("world") -> 5
+<br>These built-in functions and methods were combined to create a single defined function that moves the first character of the string to the end while preserving all other characters and their capitalization.
+```
+def rotate_word(word):
+    l=int(len(word))
+    return(word[1:l:1]+word[0:l:l])
+
+print(rotate_word(input("enter a word")))
+```
+## 2. USERNAME BUILDER PROBLEM
+Create a function that accepts two strings: first name and last name. The
+function must:
+- convert all letters to lowercase;
+- remove all spaces from the first and last name; and
+- Join the processed first and last names using a period (.)
+<br> The following functions and methods were used:
+- ` "".lower() ` - Changes all uppercase characters to their lowercase versions.
+  <br> Example: "My Name Is".lower() -> 'my name is'
+- ` "".replace(a, b)` - Replaces every element/character in a using b.
+  <br> Example: "my name is".replace(" ","") -> 'mynameis'
+<br>These built-in functions and methods were combined to create a function that accepts two strings, first and last name. While converting all letters to lowercase, remove all spaces from the first and last names, then join the processed first and last names with a period (.).
+```
+def make_username(first_name,last_name):
+    return((first_name.lower().replace(" ", "")+"."+last_name.lower().replace(" ", "")))
+
+print(make_username(input("Enter first name"), input("Enter last name")))
+```
+## 3. BOOKEND SWAP PROBLEM
