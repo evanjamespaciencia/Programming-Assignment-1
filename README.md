@@ -4,3 +4,5 @@ This repository contains Programming Assignment 1 for the course "Advanced Compu
 
 ## WORD ROTATION PROBLEM
 Create a function that accepts a non-empty string and moves the first character of the string to the end while keeping all remaining characters in their original order and the capitalization of every character.
+The following functions and methods were used:
+'s[starting element: length of string: increment'
