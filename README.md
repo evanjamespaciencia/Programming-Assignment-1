@@ -33,10 +33,10 @@ print(make_username(input("Enter first name"), input("Enter last name")))
 ```
 ## 3. BOOKEND SWAP PROBLEM
 Create a function that accepts a list containing at least two elements. Unpack the list into 3 elements:<br>
-- first – the first element.
-• middle – a list containing everything between the first and last elements.
-• last – the last element
-<br> Swap the first and last elements of the list while keeping the middle elements in order and leaving the original list unchanged. <br>
+- first – the first element.<br>
+- middle – a list containing everything between the first and last elements.<br>
+- last – the last element<br><br>
+<br>Swap the first and last elements of the list while keeping the middle elements in order and leaving the original list unchanged. <br>
 The following functions and methods were used:<br><br>
 - `"".remove(a)` - Removes an element from a list.<br>
 Example: <br>
@@ -50,12 +50,7 @@ m.append("orange") -> ["banana","apple","grape","orange"] <br>
 Example:
 m=["blue","green","yellow"]
 m.insert(0,"red"] -> ["red", "blue","green", "yellow"]<br>
-<br>These built-in functions and methods were combined to create a function that accepts a list containing at least two elements. Unpack the list into 3 elements:<br>
-- first – the first element.
-  
-- middle – a list containing everything between the first and last elements.
-  
-- last – the last element
+<br>These built-in functions and methods were combined to create a function that accepts a list containing at least two elements. Unpack the list into 3 elements: first, the first element, a list containing everything between the first and last elements, and last, the last element
   
 <br> Swap the first and last elements of the list while keeping the middle elements in order and leaving the original list unchanged. <br>
 The following functions and methods were used:<br>
