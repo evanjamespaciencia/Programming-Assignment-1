@@ -51,4 +51,7 @@ print(swap_bookends(["red", "green", "blue"]))
 print(swap_bookends([8,3]))
 ```
 ## Edit Log/History
-August 8, 2026 -> Edited examples list for problem 2
+August 8, 2026 -> 
+Edited examples list for problem 2
+Removed functions used for problem 3
+Edited final program code for problems 1-3
