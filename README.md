@@ -42,8 +42,6 @@ Create a function that accepts a list containing at least two elements. Unpack t
 There were no functions used in this problem.<br>
 <br>These built-in functions and methods were combined to create a function that accepts a list containing at least two elements. Unpack the list into 3 elements: first, the first element, a list containing everything between the first and last elements, and last, the last element
   
-<br> Swap the first and last elements of the list while keeping the middle elements in order and leaving the original list unchanged. <br>
-The following functions and methods were used:<br>
 ```
 def swap_bookends(items):
     first, *middle, last = items
